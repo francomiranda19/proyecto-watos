@@ -31,7 +31,7 @@ Pokemon Id,PokedexNumber,PokemonName,Classification,PokemonHeight,PokemonWeight,
 30,14,Kakuna,Cocoon Pokemon,0.6,10.0,Bug,Shed Skin,The Pokémon may heal its own status conditions by shedding its skin.,50.0,50.0,70,Red,Kanto,45,25,50,25,25,35,205,0,0,2,0,0,0,2,120,Medium Fast,1000000,72,Bug,15
 31,13,Weedle,Hairy Bug Pokemon,0.3,3.2,Bug,Shield Dust,This Pokémon's dust blocks the additional effects of attacks taken.,50.0,50.0,70,Red,Kanto,40,35,30,20,20,50,195,0,0,0,0,0,1,1,255,Medium Fast,1000000,39,Bug,15
 32,10,Caterpie,Worm Pokemon,0.3,2.9,Bug,Shield Dust,This Pokémon's dust blocks the additional effects of attacks taken.,50.0,50.0,70,Red,Kanto,45,30,35,20,20,45,195,1,0,0,0,0,0,1,255,Medium Fast,1000000,39,Bug,15
-33,29,Nidoran(Female),Poison Pin Pokemon,0.4,7.0,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,0.0,100.0,70,Red,Kanto,55,47,52,40,40,41,275,1,0,0,0,0,0,1,235,Medium Slow,1059860,55,Monster,20
+33,29,NidoranFemale,Poison Pin Pokemon,0.4,7.0,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,0.0,100.0,70,Red,Kanto,55,47,52,40,40,41,275,1,0,0,0,0,0,1,235,Medium Slow,1059860,55,Monster,20
 34,390,Chimchar,Chimp Pokemon,0.5,6.2,Fire,Blaze,Powers up Fire-type moves when the Pokémon's HP is low. ,87.5,12.5,70,Diamond,Sinnoh,44,58,44,58,44,61,309,0,0,0,0,0,1,1,45,Medium Slow,1059860,62,Field,20
 35,391,Monferno,Playful Pokemon,0.9,22.0,Fire,Blaze,Powers up Fire-type moves when the Pokémon's HP is low. ,87.5,12.5,70,Diamond,Sinnoh,64,78,52,78,52,81,405,0,0,0,1,0,1,2,45,Medium Slow,1059860,142,Field,20
 36,489,Phione,Sea Drifter Pokemon,0.4,3.1,Water,Hydration,Heals status conditions if it's raining.,0.0,0.0,70,Diamond,Sinnoh,80,80,80,80,80,80,480,1,0,0,0,0,0,1,30,Slow,1250000,216,Water 1,40
@@ -46,7 +46,7 @@ Pokemon Id,PokedexNumber,PokemonName,Classification,PokemonHeight,PokemonWeight,
 45,150,Mewtwo,Genetic Pokemon,1.5,33.0,Psychic,Insomnia,The Pokémon is suffering from insomnia and cannot fall asleep.,0.0,0.0,0,X,Kalos,106,150,70,194,120,140,780,0,0,0,3,0,0,3,3,Slow,1250000,351,Undiscovered,120
 46,81,Magnemite,Magnet Pokemon,0.3,6.0,Electric,Magnet Pull,Prevents Steel-type Pokémon from escaping using its magnetic force.,0.0,0.0,70,Red,Kanto,25,35,70,95,55,45,325,0,0,0,1,0,0,1,190,Medium Fast,1000000,65,Mineral,20
 47,100,Voltorb,Ball Pokemon,0.5,10.5,Electric,Soundproof,Soundproofing gives the Pokémon full immunity to all sound-based moves.,0.0,0.0,70,Red,Kanto,40,30,50,55,55,100,330,0,0,0,0,0,1,1,190,Medium Fast,1000000,66,Mineral,20
-48,32,Nidoran(Male),Poison Pin Pokemon,0.5,9.0,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,100.0,0.0,70,Red,Kanto,46,57,40,40,40,50,273,0,1,0,0,0,0,1,235,Medium Slow,1059860,55,Monster,20
+48,32,NidoranMale,Poison Pin Pokemon,0.5,9.0,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,100.0,0.0,70,Red,Kanto,46,57,40,40,40,50,273,0,1,0,0,0,0,1,235,Medium Slow,1059860,55,Monster,20
 49,33,Nidorino,Poison Pin Pokemon,0.9,19.5,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,100.0,0.0,70,Red,Kanto,61,72,57,55,55,65,365,0,2,0,0,0,0,2,120,Medium Slow,1059860,128,Monster,20
 50,34,Nidoking,Drill Pokemon,1.4,62.0,Poison,Poison Point,Contact with the Pokémon may poison the attacker.,100.0,0.0,70,Red,Kanto,81,102,77,85,75,85,505,0,3,0,0,0,0,3,45,Medium Slow,1059860,227,Monster,20
 51,173,Cleffa,Star Shape Pokemon,0.3,3.0,Fairy,Cute Charm,Contact with the Pokémon may cause infatuation.,25.0,75.0,140,Gold,Johto,50,25,28,45,55,15,218,0,0,0,0,1,0,1,150,Fast,800000,44,Undiscovered,10

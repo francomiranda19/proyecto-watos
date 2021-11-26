@@ -738,29 +738,29 @@ ex:Caterpie ex:experienceGrowthTotal "1000000"^^xsd:integer .
 ex:Caterpie ex:experienceYield "39"^^xsd:integer .
 ex:Caterpie ex:primaryEggGroup "Bug" .
 ex:Caterpie ex:eggCycleCount "15"^^xsd:integer .
-ex:Nidoran(Female) rdf:type ex:Pokemon .
-ex:Nidoran(Female) ex:pokedexNumber "29"^^xsd:integer .
-ex:Nidoran(Female) ex:pokemonName "Nidoran(Female)" .
-ex:Nidoran(Female) ex:classification "Poison Pin Pokemon" .
-ex:Nidoran(Female) ex:pokemonHeight "0.4"^^xsd:decimal .
-ex:Nidoran(Female) ex:pokemonWeight "7.0"^^xsd:decimal .
-ex:Nidoran(Female) ex:primaryType "Poison" .
-ex:Nidoran(Female) ex:primaryAbility "Poison Point" .
-ex:Nidoran(Female) ex:maleRatio "0.0"^^xsd:decimal .
-ex:Nidoran(Female) ex:femaleRatio "100.0"^^xsd:decimal .
-ex:Nidoran(Female) ex:baseHappiness "70"^^xsd:integer .
-ex:Nidoran(Female) ex:healthStat "55"^^xsd:integer .
-ex:Nidoran(Female) ex:attackStat "47"^^xsd:integer .
-ex:Nidoran(Female) ex:specialAttackStat "40"^^xsd:integer .
-ex:Nidoran(Female) ex:specialDefenseStat "40"^^xsd:integer .
-ex:Nidoran(Female) ex:speedStat "41"^^xsd:integer .
-ex:Nidoran(Female) ex:baseStatTotal "275"^^xsd:integer .
-ex:Nidoran(Female) ex:catchRate "235"^^xsd:integer .
-ex:Nidoran(Female) ex:experienceGrowth "Medium Slow" .
-ex:Nidoran(Female) ex:experienceGrowthTotal "1059860"^^xsd:integer .
-ex:Nidoran(Female) ex:experienceYield "55"^^xsd:integer .
-ex:Nidoran(Female) ex:primaryEggGroup "Monster" .
-ex:Nidoran(Female) ex:eggCycleCount "20"^^xsd:integer .
+ex:NidoranFemale rdf:type ex:Pokemon .
+ex:NidoranFemale ex:pokedexNumber "29"^^xsd:integer .
+ex:NidoranFemale ex:pokemonName "NidoranFemale" .
+ex:NidoranFemale ex:classification "Poison Pin Pokemon" .
+ex:NidoranFemale ex:pokemonHeight "0.4"^^xsd:decimal .
+ex:NidoranFemale ex:pokemonWeight "7.0"^^xsd:decimal .
+ex:NidoranFemale ex:primaryType "Poison" .
+ex:NidoranFemale ex:primaryAbility "Poison Point" .
+ex:NidoranFemale ex:maleRatio "0.0"^^xsd:decimal .
+ex:NidoranFemale ex:femaleRatio "100.0"^^xsd:decimal .
+ex:NidoranFemale ex:baseHappiness "70"^^xsd:integer .
+ex:NidoranFemale ex:healthStat "55"^^xsd:integer .
+ex:NidoranFemale ex:attackStat "47"^^xsd:integer .
+ex:NidoranFemale ex:specialAttackStat "40"^^xsd:integer .
+ex:NidoranFemale ex:specialDefenseStat "40"^^xsd:integer .
+ex:NidoranFemale ex:speedStat "41"^^xsd:integer .
+ex:NidoranFemale ex:baseStatTotal "275"^^xsd:integer .
+ex:NidoranFemale ex:catchRate "235"^^xsd:integer .
+ex:NidoranFemale ex:experienceGrowth "Medium Slow" .
+ex:NidoranFemale ex:experienceGrowthTotal "1059860"^^xsd:integer .
+ex:NidoranFemale ex:experienceYield "55"^^xsd:integer .
+ex:NidoranFemale ex:primaryEggGroup "Monster" .
+ex:NidoranFemale ex:eggCycleCount "20"^^xsd:integer .
 ex:Chimchar rdf:type ex:Pokemon .
 ex:Chimchar ex:pokedexNumber "390"^^xsd:integer .
 ex:Chimchar ex:pokemonName "Chimchar" .
@@ -1083,29 +1083,29 @@ ex:Voltorb ex:experienceGrowthTotal "1000000"^^xsd:integer .
 ex:Voltorb ex:experienceYield "66"^^xsd:integer .
 ex:Voltorb ex:primaryEggGroup "Mineral" .
 ex:Voltorb ex:eggCycleCount "20"^^xsd:integer .
-ex:Nidoran(Male) rdf:type ex:Pokemon .
-ex:Nidoran(Male) ex:pokedexNumber "32"^^xsd:integer .
-ex:Nidoran(Male) ex:pokemonName "Nidoran(Male)" .
-ex:Nidoran(Male) ex:classification "Poison Pin Pokemon" .
-ex:Nidoran(Male) ex:pokemonHeight "0.5"^^xsd:decimal .
-ex:Nidoran(Male) ex:pokemonWeight "9.0"^^xsd:decimal .
-ex:Nidoran(Male) ex:primaryType "Poison" .
-ex:Nidoran(Male) ex:primaryAbility "Poison Point" .
-ex:Nidoran(Male) ex:maleRatio "100.0"^^xsd:decimal .
-ex:Nidoran(Male) ex:femaleRatio "0.0"^^xsd:decimal .
-ex:Nidoran(Male) ex:baseHappiness "70"^^xsd:integer .
-ex:Nidoran(Male) ex:healthStat "46"^^xsd:integer .
-ex:Nidoran(Male) ex:attackStat "57"^^xsd:integer .
-ex:Nidoran(Male) ex:specialAttackStat "40"^^xsd:integer .
-ex:Nidoran(Male) ex:specialDefenseStat "40"^^xsd:integer .
-ex:Nidoran(Male) ex:speedStat "50"^^xsd:integer .
-ex:Nidoran(Male) ex:baseStatTotal "273"^^xsd:integer .
-ex:Nidoran(Male) ex:catchRate "235"^^xsd:integer .
-ex:Nidoran(Male) ex:experienceGrowth "Medium Slow" .
-ex:Nidoran(Male) ex:experienceGrowthTotal "1059860"^^xsd:integer .
-ex:Nidoran(Male) ex:experienceYield "55"^^xsd:integer .
-ex:Nidoran(Male) ex:primaryEggGroup "Monster" .
-ex:Nidoran(Male) ex:eggCycleCount "20"^^xsd:integer .
+ex:NidoranMale rdf:type ex:Pokemon .
+ex:NidoranMale ex:pokedexNumber "32"^^xsd:integer .
+ex:NidoranMale ex:pokemonName "NidoranMale" .
+ex:NidoranMale ex:classification "Poison Pin Pokemon" .
+ex:NidoranMale ex:pokemonHeight "0.5"^^xsd:decimal .
+ex:NidoranMale ex:pokemonWeight "9.0"^^xsd:decimal .
+ex:NidoranMale ex:primaryType "Poison" .
+ex:NidoranMale ex:primaryAbility "Poison Point" .
+ex:NidoranMale ex:maleRatio "100.0"^^xsd:decimal .
+ex:NidoranMale ex:femaleRatio "0.0"^^xsd:decimal .
+ex:NidoranMale ex:baseHappiness "70"^^xsd:integer .
+ex:NidoranMale ex:healthStat "46"^^xsd:integer .
+ex:NidoranMale ex:attackStat "57"^^xsd:integer .
+ex:NidoranMale ex:specialAttackStat "40"^^xsd:integer .
+ex:NidoranMale ex:specialDefenseStat "40"^^xsd:integer .
+ex:NidoranMale ex:speedStat "50"^^xsd:integer .
+ex:NidoranMale ex:baseStatTotal "273"^^xsd:integer .
+ex:NidoranMale ex:catchRate "235"^^xsd:integer .
+ex:NidoranMale ex:experienceGrowth "Medium Slow" .
+ex:NidoranMale ex:experienceGrowthTotal "1059860"^^xsd:integer .
+ex:NidoranMale ex:experienceYield "55"^^xsd:integer .
+ex:NidoranMale ex:primaryEggGroup "Monster" .
+ex:NidoranMale ex:eggCycleCount "20"^^xsd:integer .
 ex:Nidorino rdf:type ex:Pokemon .
 ex:Nidorino ex:pokedexNumber "33"^^xsd:integer .
 ex:Nidorino ex:pokemonName "Nidorino" .
