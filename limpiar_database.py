@@ -28,6 +28,10 @@ for i in range(len(nombres_pokemon)): # Si un nombre contiene uno de los siguien
     nuevos_nombres_pokemon[nombres_pokemon[i]] = nuevo_nombre
 pokemon["PokemonName"] = pokemon["PokemonName"].map(nuevos_nombres_pokemon) # Se asigna la nueva columna con los nombres sin caracteres especiales
 
+# Se elimina un pokemon inválido
+tipo_nulo = pokemon[pokemon["PokemonName"] == "Type:Null"].index
+pokemon = pokemon.drop(tipo_nulo)
+
 RUTA = "tarql-1.2/bin"
 pokemon.to_csv(f"{RUTA}/pokemon_database.csv", sep=',') # Se exporta la nueva base de datos como csv y tsv
 pokemon.to_csv(f"{RUTA}/pokemon_database.tsv", sep='\t')

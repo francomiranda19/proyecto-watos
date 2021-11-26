@@ -17892,29 +17892,6 @@
 <http://ex.org/Pokemon/Pyukumuku> <http://ex.org/experienceYield> "144"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://ex.org/Pokemon/Pyukumuku> <http://ex.org/primaryEggGroup> "Water 1" .
 <http://ex.org/Pokemon/Pyukumuku> <http://ex.org/eggCycleCount> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ex.org/Pokemon> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/pokedexNumber> "772"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/pokemonName> "Type:Null" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/classification> "Synthetic Pokemon" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/pokemonHeight> "1.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/pokemonWeight> "120.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/primaryType> "Normal" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/primaryAbility> "Battle Armor" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/maleRatio> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/femaleRatio> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/baseHappiness> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/healthStat> "95"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/attackStat> "95"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/specialAttackStat> "95"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/specialDefenseStat> "95"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/speedStat> "59"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/baseStatTotal> "534"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/catchRate> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/experienceGrowth> "Slow" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/experienceGrowthTotal> "1250000"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/experienceYield> "107"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/primaryEggGroup> "Undiscovered" .
-<http://ex.org/Pokemon/Type:Null> <http://ex.org/eggCycleCount> "120"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://ex.org/Pokemon/Silvally> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ex.org/Pokemon> .
 <http://ex.org/Pokemon/Silvally> <http://ex.org/pokedexNumber> "773"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://ex.org/Pokemon/Silvally> <http://ex.org/pokemonName> "Silvally" .
