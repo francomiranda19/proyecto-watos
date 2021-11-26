@@ -10,5 +10,5 @@ sh tarql --ntriples pokemon.sparql pokemon_database.csv
 
 Si se quiere guardar en un archivo de texto:
 ```
-sh tarql --ntriples pokemon.sparql pokemon_database.csv > pokemon_rdf.txt
+sh tarql --ntriples pokemon.sparql pokemon_database.csv > pokemon_rdf.ttl
 ```

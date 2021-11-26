@@ -25,6 +25,8 @@ for i in range(len(nombres_pokemon)): # Si un nombre contiene uno de los siguien
     nuevo_nombre = nuevo_nombre.replace(".", "")
     nuevo_nombre = nuevo_nombre.replace("'", "")
     nuevo_nombre = nuevo_nombre.replace("-", "")
+    nuevo_nombre = nuevo_nombre.replace("(", "")
+    nuevo_nombre = nuevo_nombre.replace(")", "")
     nuevos_nombres_pokemon[nombres_pokemon[i]] = nuevo_nombre
 pokemon["PokemonName"] = pokemon["PokemonName"].map(nuevos_nombres_pokemon) # Se asigna la nueva columna con los nombres sin caracteres especiales
 
