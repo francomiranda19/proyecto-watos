@@ -11,11 +11,12 @@ CONSTRUCT {
     ex:pokemonWeight ?weight;
     ex:primaryType ?PrimaryType;
     ex:primaryAbility ?PrimaryAbility;
+    ex:primaryAbilityDescription ?PrimaryAbilityDescription;
     ex:maleRatio ?maleRatio;
     ex:femaleRatio ?femaleRatio;
     ex:baseHappiness ?baseHappiness;
-    ex:gameOfOrigin ?GameOfOrigin;
-    ex:regionOfOrigin ?RegionOfOrigin;
+    ex:gameOfOrigin ?GameofOrigin;
+    ex:regionOfOrigin ?RegionofOrigin;
     ex:healthStat ?healthStat;
     ex:attackStat ?attackStat;
     ex:defenseStat ?defenseStat;
@@ -23,6 +24,13 @@ CONSTRUCT {
     ex:specialDefenseStat ?specialDefenseStat;
     ex:speedStat ?speedStat;
     ex:baseStatTotal ?baseStatTotal;
+    ex:healthEV ?healthEV;
+    ex:attackEV ?attackEV;
+    ex:defenseEV ?defenseEV;
+    ex:specialAttackEV ?specialAttackEVEV;
+    ex:specialDefenseEV ?specialDefenseEV;
+    ex:speedEV ?speedEV;
+    ex:evYieldTotal ?evYieldTotal;
     ex:catchRate ?catchRate;
     ex:experienceGrowth ?ExperienceGrowth;
     ex:experienceGrowthTotal ?experienceGrowthTotal;
@@ -42,11 +50,18 @@ WHERE {
   BIND (xsd:integer(?BaseHappiness) AS ?baseHappiness)
   BIND (xsd:integer(?HealthStat) AS ?healthStat)
   BIND (xsd:integer(?AttackStat) AS ?attackStat)
-  BIND (xsd:integer(?DefesceStat) AS ?defesceStat)
+  BIND (xsd:integer(?DefenseStat) AS ?defenseStat)
   BIND (xsd:integer(?SpecialAttackStat) AS ?specialAttackStat)
   BIND (xsd:integer(?SpecialDefenseStat) AS ?specialDefenseStat)
   BIND (xsd:integer(?SpeedStat) AS ?speedStat)
   BIND (xsd:integer(?BaseStatTotal) AS ?baseStatTotal)
+  BIND (xsd:integer(?HealthEV) AS ?healthEV)
+  BIND (xsd:integer(?AttackEV) AS ?attackEV)
+  BIND (xsd:integer(?DefenseEV) AS ?defenseEV)
+  BIND (xsd:integer(?SpecialAttackEV) AS ?specialAttackEV)
+  BIND (xsd:integer(?SpecialDefenseEV) AS ?specialDefenseEV)
+  BIND (xsd:integer(?SpeedEV) AS ?speedEV)
+  BIND (xsd:integer(?EVYieldTotal) AS ?evYieldTotal)
   BIND (xsd:integer(?CatchRate) AS ?catchRate)
   BIND (xsd:integer(?ExperienceGrowthTotal) AS ?experienceGrowthTotal)
   BIND (xsd:integer(?ExperienceYield) AS ?experienceYield)
