@@ -35,5 +35,4 @@ tipo_nulo = pokemon[pokemon["PokemonName"] == "Type:Null"].index
 pokemon = pokemon.drop(tipo_nulo)
 
 RUTA = "tarql-1.2/bin"
-pokemon.to_csv(f"{RUTA}/pokemon_database.csv", sep=',') # Se exporta la nueva base de datos como csv y tsv
-pokemon.to_csv(f"{RUTA}/pokemon_database.tsv", sep='\t')
+pokemon.to_csv(f"{RUTA}/pokemon_database.csv", sep=',') # Se exporta la nueva base de datos como csv
