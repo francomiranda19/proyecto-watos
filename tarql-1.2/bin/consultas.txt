@@ -1,0 +1,40 @@
+PREFIX ex: <http://ex.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+IMC
+
+SELECT ?id ?pokemon (?weight / (?height * ?height) as ?bmi) WHERE {
+?id rdf:type ex:Pokemon .
+?id ex:pokemonName ?pokemon .
+?id ex:pokemonHeight ?height .
+?id ex:pokemonWeight ?weight .
+}
+ORDER BY DESC(?bmi)
+
+
+
+
+Tipos por región
+
+SELECT ?region ?type (COUNT(?type) as ?count)
+WHERE {
+?id rdf:type ex:Pokemon .
+?id ex:primaryType ?type .
+?id ex:regionOfOrigin ?region .
+}
+GROUP BY ?region ?type
+ORDER BY DESC(?count)
+
+
+
+Región con pokemon más fuertes
+
+SELECT ?region (AVG(?stat) as ?statTotal) WHERE {
+?id rdf:type ex:Pokemon .
+?id ex:regionOfOrigin ?region .
+?id ex:baseStatTotal ?stat .
+}
+GROUP BY ?region

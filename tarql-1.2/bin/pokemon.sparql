@@ -3,7 +3,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
   ?URI a ex:Pokemon;
-    ex:pokemonID ?id;
     ex:pokedexNumber ?number;
     ex:pokemonName ?PokemonName;
     ex:classification ?Classification;
@@ -40,8 +39,7 @@ CONSTRUCT {
 }
 FROM <file:pokemon_database.csv> 
 WHERE {
-  BIND (URI(CONCAT('http://ex.org/', ?PokemonName)) AS ?URI)
-  BIND (xsd:integer(?PokemonId) AS ?id)
+  BIND (URI(CONCAT('http://ex.org/', ?PokemonId)) AS ?URI)
   BIND (xsd:integer(?PokedexNumber) AS ?number)
   BIND (xsd:decimal(?PokemonHeight) AS ?height)
   BIND (xsd:decimal(?PokemonWeight) AS ?weight)
@@ -67,4 +65,3 @@ WHERE {
   BIND (xsd:integer(?ExperienceYield) AS ?experienceYield)
   BIND (xsd:integer(?EggCycleCount) AS ?eggCycleCount)
 }
-
