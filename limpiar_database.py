@@ -1,6 +1,6 @@
 import pandas as pd
 
-pokemon_original = pd.read_csv("pokemon_database_original.csv", encoding="UTF-8", index_col=0) # Se importa la base de datos original
+pokemon_original = pd.read_csv("pokemon_database_original.csv", encoding="UTF-8") # Se importa la base de datos original
 nombres = pokemon_original.columns.values # Nombres de las columnas
 nulos = pokemon_original.isnull().sum() # Nulos por columnas
 

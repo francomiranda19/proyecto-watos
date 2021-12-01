@@ -1,14 +1,15 @@
 # proyecto-watos
 Proyecto del curso CC7220
 
-Para transformar la base de datos a RDF:
+La base de datos se obtuvo desde https://www.kaggle.com/mrdew25/pokemon-database .
 
-En la carpeta **tarql-1.2/bin** ejecutar (en Ubuntu):
+Una vez descargada, dejarla en el mismo directorio que el archivo limpiar_database.py y ejecutar el script para limpiar la base de datos.
+
+Para transformar la base de datos a RDF y guardarlo en un archivo TTL, en la carpeta **tarql-1.2/bin** ejecutar (en Ubuntu):
 ```
-sh tarql --ntriples pokemon.sparql pokemon_database.csv
+sh tarql --ntriples pokemon.sparql pokemon_database.csv > pokemon_rdf_original.ttl
 ```
 
-Si se quiere guardar en un archivo de texto:
-```
-sh tarql --ntriples pokemon.sparql pokemon_database.csv > pokemon_rdf.ttl
-```
+El archivo generado se puede limpiar a mano para dejarlo en el formato deseado. En este caso el archivo limpio está en pokemon_rdf.ttl .
+
+Luego, en la página de <a href="https://cc7220.dcc.uchile.cl:8900/sparql">Virtuoso</a> se pueden ejecutar las consultas SPARQL del archivo consultas.txt, utilizando el link http://anakena.dcc.uchile.cl/~famirand/pokemon_rdf.ttl
