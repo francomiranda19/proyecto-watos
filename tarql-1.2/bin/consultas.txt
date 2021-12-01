@@ -20,6 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?region ?type (COUNT(?type) as ?count)
 WHERE {
+?pokemon rdf:type ex:Pokemon .
 ?pokemon ex:primaryType ?type .
 ?pokemon ex:regionOfOrigin ?region .
 }
@@ -28,7 +29,7 @@ ORDER BY DESC(?count)
 
 
 
-# Región con pokemon más fuertes
+# Región con pokemon más fuertes en promedio
 PREFIX ex: <http://ex.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
