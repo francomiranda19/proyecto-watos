@@ -1,0 +1,69 @@
+PREFIX ex: <http://ex.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?URI a ex:Pokemon;
+    ex:pokemonID ?id;
+    ex:pokedexNumber ?number;
+    ex:pokemonName ?PokemonName;
+    ex:classification ?Classification;
+    ex:pokemonHeight ?height;
+    ex:pokemonWeight ?weight;
+    ex:primaryType ?PrimaryType;
+    ex:primaryAbility ?PrimaryAbility;
+    ex:maleRatio ?maleRatio;
+    ex:femaleRatio ?femaleRatio;
+    ex:baseHappiness ?baseHappiness;
+    ex:gameOfOrigin ?GameofOrigin;
+    ex:regionOfOrigin ?RegionofOrigin;
+    ex:healthStat ?healthStat;
+    ex:attackStat ?attackStat;
+    ex:defenseStat ?defenseStat;
+    ex:specialAttackStat ?specialAttackStat;
+    ex:specialDefenseStat ?specialDefenseStat;
+    ex:speedStat ?speedStat;
+    ex:baseStatTotal ?baseStatTotal;
+    ex:healthEV ?healthEV;
+    ex:attackEV ?attackEV;    
+
+    ex:catchRate ?catchRate;
+    ex:experienceGrowth ?ExperienceGrowth;
+    ex:experienceGrowthTotal ?experienceGrowthTotal;
+    ex:experienceYield ?experienceYield;
+    ex:primaryEggGroup ?PrimaryEggGroup;
+    ex:eggCycleCount ?eggCycleCount;
+}
+FROM <file:pokemon_database.csv> 
+WHERE {
+  BIND (URI(CONCAT('http://ex.org/', ?PokemonName)) AS ?URI)
+  BIND (xsd:integer(?PokemonId) AS ?id)
+  BIND (xsd:integer(?PokedexNumber) AS ?number)
+  BIND (xsd:decimal(?PokemonHeight) AS ?height)
+  BIND (xsd:decimal(?PokemonWeight) AS ?weight)
+  BIND (xsd:decimal(?MaleRatio) AS ?maleRatio)
+  BIND (xsd:decimal(?FemaleRatio) AS ?femaleRatio)
+  BIND (xsd:integer(?BaseHappiness) AS ?baseHappiness)
+  BIND (xsd:integer(?HealthStat) AS ?healthStat)
+  BIND (xsd:integer(?AttackStat) AS ?attackStat)
+  BIND (xsd:integer(?DefenseStat) AS ?defenseStat)
+  BIND (xsd:integer(?SpecialAttackStat) AS ?specialAttackStat)
+  BIND (xsd:integer(?SpecialDefenseStat) AS ?specialDefenseStat)
+  BIND (xsd:integer(?SpeedStat) AS ?speedStat)
+  BIND (xsd:integer(?BaseStatTotal) AS ?baseStatTotal)
+  BIND (xsd:integer(?HealthEV) AS ?healthEV)
+  BIND (xsd:integer(?AttackEV) AS ?attackEV)
+
+  BIND (xsd:integer(?DefenseEV) AS ?defenseEV)  
+  BIND (xsd:integer(?SpecialAttackEV) AS ?specialAttackEV)
+  BIND (xsd:integer(?SpecialDefenseEV) AS ?specialDefenseEV)
+  BIND (xsd:integer(?DefenseEV) AS ?defenseEV)
+  BIND (xsd:integer(?DefenseEV) AS ?defenseEV)
+
+  BIND (xsd:integer(?CatchRate) AS ?catchRate)
+  BIND (xsd:integer(?ExperienceGrowthTotal) AS ?experienceGrowthTotal)
+  BIND (xsd:integer(?ExperienceYield) AS ?experienceYield)
+  BIND (xsd:integer(?EggCycleCount) AS ?eggCycleCount)
+}
+
+DefenseEV,SpecialAttackEV,SpecialDefenseEV,SpeedEV,EVYieldTotal
+
