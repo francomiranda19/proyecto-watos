@@ -1,10 +1,11 @@
 # IMC
-PREFIX ex: <http://ex.org/>
+PREFIX ex:  <http://ex.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?pokemon (?weight / (?height * ?height) as ?bmi) WHERE {
-?id ex:pokemonName ?pokemon .
+SELECT ?pokemonName (?weight / (?height * ?height) as ?bmi) WHERE {
+?pokemon rdf:type ex:Pokemon .
+?pokemon ex:pokemonName ?pokemonName.
 ?id ex:pokemonHeight ?height .
 ?id ex:pokemonWeight ?weight .
 }
