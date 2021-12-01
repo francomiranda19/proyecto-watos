@@ -1,9 +1,9 @@
 # proyecto-watos
 Proyecto del curso CC7220
 
-La base de datos se obtuvo desde https://www.kaggle.com/mrdew25/pokemon-database .
+La base de datos se obtuvo desde https://www.kaggle.com/mrdew25/pokemon-database , y se encuentra en pokemon_database_original.csv .
 
-Una vez descargada, dejarla en el mismo directorio que el archivo limpiar_database.py y ejecutar el script para limpiar la base de datos.
+Para limpiarla, ejecutar el script limpiar_database.py .
 
 Para transformar la base de datos a RDF y guardarlo en un archivo TTL, en la carpeta **tarql-1.2/bin** ejecutar (en Ubuntu):
 ```
