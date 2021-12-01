@@ -42,7 +42,7 @@ WHERE {
   BIND (xsd:integer(?BaseHappiness) AS ?baseHappiness)
   BIND (xsd:integer(?HealthStat) AS ?healthStat)
   BIND (xsd:integer(?AttackStat) AS ?attackStat)
-  BIND (xsd:integer(?DefenseStat) AS ?defenseStat)
+  BIND (xsd:integer(?DefesceStat) AS ?defesceStat)
   BIND (xsd:integer(?SpecialAttackStat) AS ?specialAttackStat)
   BIND (xsd:integer(?SpecialDefenseStat) AS ?specialDefenseStat)
   BIND (xsd:integer(?SpeedStat) AS ?speedStat)
