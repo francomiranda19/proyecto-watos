@@ -34,7 +34,9 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?region (AVG(?stat) as ?statTotal) WHERE {
+?pokemon rdf:type ex:Pokemon .
 ?pokemon ex:regionOfOrigin ?region .
 ?pokemon ex:baseStatTotal ?stat .
 }
 GROUP BY ?region
+ORDER BY DESC(?statTotal)
