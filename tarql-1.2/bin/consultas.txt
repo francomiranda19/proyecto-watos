@@ -1,4 +1,4 @@
-# IMC
+# IMC mayor a menor
 PREFIX ex:  <http://ex.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -13,19 +13,48 @@ ORDER BY DESC(?bmi)
 
 
 
+# IMC menor a mayor
+PREFIX ex:  <http://ex.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?pokemonName (?weight / (?height * ?height) as ?bmi) WHERE {
+?pokemon rdf:type ex:Pokemon .
+?pokemon ex:pokemonName ?pokemonName.
+?pokemon ex:pokemonHeight ?height .
+?pokemon ex:pokemonWeight ?weight .
+}
+ORDER BY ASC(?bmi)
+
+
+
 # Tipos por región
 PREFIX ex: <http://ex.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?region ?type (COUNT(?type) as ?count)
-WHERE {
-?pokemon rdf:type ex:Pokemon .
-?pokemon ex:primaryType ?type .
-?pokemon ex:regionOfOrigin ?region .
+SELECT ?region ?type ?max WHERE {
+    {
+       SELECT ?region ?type (COUNT(?type) AS ?max) WHERE {
+                ?pokemon rdf:type ex:Pokemon .
+                ?pokemon ex:primaryType ?type .
+                ?pokemon ex:regionOfOrigin ?region .
+        }
+        GROUP BY ?region ?type
+    }
+    {
+        SELECT ?region (MAX(?count) AS ?max) WHERE {
+            SELECT ?region ?type (COUNT(?type) AS ?count) WHERE {
+                ?pokemon rdf:type ex:Pokemon .
+                ?pokemon ex:primaryType ?type .
+                ?pokemon ex:regionOfOrigin ?region .
+            }
+            GROUP BY ?region ?type
+        }
+        GROUP BY ?region
+    }
 }
-GROUP BY ?region ?type
-ORDER BY DESC(?count)
+ORDER BY DESC(?max)
 
 
 
@@ -41,3 +70,21 @@ SELECT ?region (AVG(?stat) as ?statTotal) WHERE {
 }
 GROUP BY ?region
 ORDER BY DESC(?statTotal)
+
+
+
+# Género de cada Pokémon
+CONSTRUCT { 
+    ?pokemon rdf:type ex:Pokemon .
+    ?pokemon ex:name ?pokemonName .
+    ?pokemon ex:gender ?gender .
+} WHERE {
+    ?pokemon rdf:type ex:Pokemon .
+    ?pokemon ex:pokemonName ?pokemonName .
+    ?pokemon ex:maleRatio ?maleRatio .
+    BIND(
+        IF (?maleRatio > 50.0,
+            "Most likely male.",
+            "Most likely female.") AS ?gender
+    )
+}
