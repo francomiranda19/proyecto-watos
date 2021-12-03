@@ -10,6 +10,6 @@ Para transformar la base de datos a RDF y guardarlo en un archivo TTL, en la car
 sh tarql --ntriples pokemon.sparql pokemon_database.csv > pokemon_rdf_original.ttl
 ```
 
-El archivo generado se puede limpiar a mano para dejarlo en el formato deseado. En este caso el archivo limpio está en pokemon_rdf.ttl .
+El archivo generado se puede limpiar a mano para dejarlo en el formato deseado. En este caso el archivo limpio está en tarql-1.2/bin/pokemon_rdf.ttl .
 
 Luego, en la página de <a href="https://cc7220.dcc.uchile.cl:8900/sparql">Virtuoso</a> se pueden ejecutar las consultas SPARQL del archivo consultas.txt, utilizando el link http://anakena.dcc.uchile.cl/~famirand/pokemon_rdf.ttl
